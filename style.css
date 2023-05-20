@@ -1,0 +1,367 @@
+body {
+    padding: 0;
+    background: url("img/background.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    color: rgb(220, 220, 220);
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+.center {
+    justify-content: center;
+}
+.space-around {
+    justify-content: space-around;
+}
+.space-between {
+    justify-content: space-between;
+}
+.gold-font {
+    color: rgb(235, 205, 148);
+}
+.preety-font {
+    font-family: 'Cormorant SC', serif;
+}
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(14, 15, 17);
+    z-index: 1001;
+}
+.loaded_hiding .preloader {
+    transition: 0.7s opacity;
+    opacity: 0;
+}
+.loaded .preloader {
+    display: none;
+}
+
+.spinner {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    border: 3px solid rgb(235, 205, 148);
+    border-radius: 50%;
+}
+.spinner:before, .spinner:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 3px;
+    background-color: rgb(235, 205, 148);
+    border-radius: 1.5px;
+    transform-origin: 50% 0%;
+}
+.spinner:before {
+    height: 9px;
+    left: 13.5px;
+    top: 50%;
+    -webkit-animation: spin 2000ms linear infinite;
+            animation: spin 2000ms linear infinite;
+}
+.spinner:after {
+    height: 12px;
+    left: 13.5px;
+    top: 50%;
+    -webkit-animation: spin 500ms linear infinite;
+            animation: spin 500ms linear infinite;
+}
+@-webkit-keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top {
+    justify-content: space-between;
+    width: 1090px;
+    font-weight: bold;
+}
+.top img {
+    width: 200px;
+    height: 51px;
+    margin-left: 10px;
+    margin-bottom: 14px;
+}
+.top i {
+    display:block;
+    font-size: 8px;
+    color: rgb(235, 205, 148);
+    margin-bottom: 8px;
+    transition: all 0.4s ease-out;
+}
+.top p {
+    color: rgb(235, 205, 148);
+    margin: 0;
+    font-weight: bold;
+    padding: 4px;
+}
+.top .container .container .container {
+    align-items: end;
+    margin-left: 55px;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: all 0.4s ease-out;
+}
+.top .container .container .container:hover {
+    transform: translate(0,-3px);
+}
+.top .left {
+    font-size: 14px;
+}
+.top h1 {
+    margin: 0;
+    font-size: 14px;
+    position: relative;
+    top: 52px;
+    left: -112px;
+    width: 149px
+}
+
+
+.block1 {
+    justify-content: space-around;
+    width: 1000px;
+    background-color: rgba(23, 25, 28, 0.75);
+    border-top: 1.5px solid rgb(235, 205, 148);
+    margin-top: 6px;
+}
+.block1 .left img {
+    width: 288px;
+    height: 420px;
+}
+.block1 p {
+    font-family: sans-serif;
+    line-height: 140%;
+}
+.block1 .container div {
+    margin: 40px;
+}
+.block1 a {
+    text-decoration: none;
+    position: relative;
+}
+.block1 a:after {
+	display: block;
+	position: absolute;
+    bottom: -0px;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background-color: rgb(235, 205, 148);
+	content: "";
+	transition: width 0.4s ease-out;
+}
+.block1 a:hover:after,
+.block1 a:focus:after {
+	width: 100%;
+}
+.block1 .left {
+    margin-left: 0;
+}
+.block1 h1 {
+    margin: 6px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.block1 .container .leaf img {
+    width: 577px;
+    height: 33px;
+}
+.block1 .container .leaf{
+    margin: 0;
+}
+
+
+.block2 .container a {
+    color: rgb(235, 205, 148);
+    font-family: 'Cormorant SC', serif;
+    text-decoration: none;
+    align-items: center;
+    margin-top: 8px;
+}
+.block2 .container a h1 {
+    margin-bottom: 8px;
+}
+.block2 .container a .fa-gears {
+    font-size: 24px;
+    margin-right: 6px;
+    position: relative;
+    top: 7px;
+}
+.block2 .window {
+    justify-content: space-around;
+    width: 1000px;
+    background-color: rgba(23, 25, 28, 0.75);
+    border-top: 1.5px solid rgb(235, 205, 148);
+}
+.block2 .window .container div {
+    margin: 40px;
+}
+.block2 .window img {
+    width: 184px;
+    height: 254px;
+}
+.block2 .window {
+    font-family: sans-serif;
+    line-height: 140%;
+}
+.block2 .window .image {
+    width: 280px;
+}
+.block2 .window .image h1 {
+    margin: 0;
+    padding-top: 8px;
+    border-top: 1.5px solid rgb(235, 205, 148);
+    margin-bottom: 4px;
+}
+.block2 .window .image p {
+    margin: 0;
+}
+.block2 .window p {
+    width: 550px;
+}
+.block2 .window .image div {
+    margin: 0;
+}
+.block2 .window .container .text {
+    margin-top: 0px;
+}
+
+
+.block3 .container .title {
+    color: rgb(235, 205, 148);
+    font-family: 'Cormorant SC', serif;
+    text-decoration: none;
+    align-items: center;
+    margin-top: 8px;
+    transition: all 0.4s ease-out;
+}
+.block3 .container .title h1 {
+    margin-bottom: 8px;
+}
+.block3 .container .title .fa-person {
+    font-size: 24px;
+    margin-right: 6px;
+    position: relative;
+    top: 7px;
+}
+.block3 .container .title .fa-caret-right {
+    font-size: 14px;
+    position: relative;
+    top: 9px;
+    margin-left: 4px;
+}
+.block3 .window {
+    justify-content: space-around;
+    width: 1000px;
+    background-color: rgba(23, 25, 28, 0.75);
+    border-top: 1.5px solid rgb(235, 205, 148);
+}
+.block3 .window p {
+    font-family: sans-serif;
+}
+.block3 .container .title:hover {
+    transform: translate(0,-3px);
+}
+.block3 .window .container {
+    margin: 40px;
+}
+.block3 .window .top-person img {
+    width: 360px;
+    height: 360px;
+    border-right: 1.5px solid rgb(235, 205, 148);
+}
+.block3 .window .top-person h2 {
+    font-size: 2em;
+    margin-left: 40px;
+    margin-bottom: 2px;
+    color: rgb(235, 205, 148);
+    font-weight: 0;
+    font-family: 'Cormorant SC', serif;
+}
+.block3 .window .top-person div .container {
+    margin: 0;
+}
+.block3 .window .top-person .quotes {
+    font-size: 200%;
+    margin-top: 8px;
+    margin-right: 10px;
+}
+.block3 .window .top-person .second {
+    position: relative;
+    top: 60px;
+    right: 16px;
+}
+.block3 .window .top-person .text {
+    width: 350px;
+    line-height: 140%;
+    font-style: italic;
+}
+.block3 .window .top-person .quote {
+    position: relative;
+    left: 240px;
+    width: 220px;
+    margin: 8px;
+}
+.block3 .window .top-person .right {
+    margin-left: 40px;
+}
+.block3 .window .characters img {
+    width: 280px;
+    border-bottom: 1.5px solid rgb(235, 205, 148);
+}
+.block3 .window .characters .container {
+    margin: 0;
+    color: rgb(235, 205, 148);
+}
+.block3 .window .characters .container p {
+    margin-top: 4px;
+}
+.block3 .window .characters .container h1 {
+    font-size: 140%;
+    font-family: 'Cormorant SC', serif;
+    margin-top: 2px;
+}
+.block3 .window .characters .container .fa-solid {
+    font-size: 70%;
+    position: relative;
+    top: 7px;
+    left: 4px;
+}
+.block3 .window .characters a {
+    text-decoration: none;
+}
+
+.last-block {
+    width: 1000px;
+    background-color: rgba(23, 25, 28, 0.75);
+    margin: 0;
+    color: rgb(78, 80, 82);
+}
+.last-block p {
+    padding: 20px;
+    margin: 0;
+}

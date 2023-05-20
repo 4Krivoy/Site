@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/312b1af683.js" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="container center">
+    <div class="preloader">
+        <div class='spinner'></div>
+    </div>
+    <div>
+        <div class="container top preety-font">
+            <div class="container">
+                <a href="../site.html">
+                    <img src="../img/logo.png">
+                </a>
+                <div>
+                    <h1 class="gold-font preety-font">Довідник українською</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container center">
+            <div class="block1 container">
+                <div class="container center">
+                    <h1 class="preety-font gold-font">Реєстрація</h1>
+                </div>
+                <div id="login">
+                    <div class="container">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <input type="text" placeholder="Логін">
+                    </div>
+                </div>
+                <div id="name">
+                    <div class="container">
+                        <div class="container">
+                            <input type="text" placeholder="Ім'я">
+                        </div>
+                        <div class="container">
+                            <i class="fa-solid fa-signature"></i>
+                            <input type="text" placeholder="Прізвище">
+                        </div>
+                    </div>
+                </div>
+                <div id="mail">
+                    <div class="container">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="text" placeholder="Електрона пошта">
+                    </div>
+                </div>
+                <div id="password" class="container">
+                    <div>
+                        <div class="container">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="Пароль">
+                        </div>
+                        <div class="container second">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" placeholder="Підтвердіть пароль">
+                        </div>
+                    </div>
+                    <img src="../img/ring.png">
+                </div>
+                <div class="container center">
+                    <button>Підтвердити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        }
+    </script>
+</body>
+</html>
